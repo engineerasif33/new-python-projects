@@ -3,6 +3,7 @@ print("current folder:",os.getcwd())
 file_name = input("Enter file name (example: data.txt): ")
 
 while True:
+    
     print("\n========== File Management ==========")
     print("1. Create File")
     print("2. Write File")
