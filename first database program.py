@@ -8,13 +8,13 @@ cursor = connection.cursor()
 print("databse file")
 print(os.path.abspath("school.db"))
 
-#cursor.execute("""
-#CREATE TABLE students3(
-    #id INTEGER PRIMARY KEY,
-    #name TEXT,
-    #age INTEGER
-#)
-#""")
+# cursor.execute("""
+# CREATE TABLE students3(
+#     id INTEGER PRIMARY KEY,
+#     name TEXT,
+#     age INTEGER
+# )
+# """)
 
 #print("database students3 and table is created successfully ")
 
@@ -47,13 +47,13 @@ while True:
 
 cursor.execute(
     "update students3 set age = ? where name = ?",
- (10, "ibraim")
+ (20, "ibraim")
 )
 print("Database and table upadated successfully.")
 
    #delete record from any row
-# cursor.execute("delete from students3 where id=1")
-# print(" RECORD IS DELETED FROM ID 1")
+cursor.execute("delete from students3 where id=8")
+print(" RECORD IS DELETED FROM ID 1")
   
 # reading from table
 
